@@ -1,0 +1,37 @@
+   ┌─────────────┐
+   │   Vehicle   │
+   │   Arrives   │
+   └──────┬──────┘
+          │ enters
+          ▼
+   ┌───────────────┐
+   │ Entrance Gate │
+   │ (find spot &  │
+   │  generate ticket)
+   └──────┬────────┘
+          │ requests spot
+          ▼
+   ┌───────────────────┐
+   │ Parking Manager   │
+   │ (allocates spot)  │
+   └──────┬────────────┘
+          │ assigns spot
+          ▼
+   ┌──────────────┐
+   │ Parking Spot │
+   │ (vehicle     │
+   │   parked)    │
+   └──────┬───────┘
+          │ vehicle exits
+          ▼
+   ┌───────────────┐
+   │   Exit Gate   │
+   │ (calc cost &  │
+   │   payment)    │
+   └──────┬────────┘
+          │ frees spot
+          ▼
+   ┌───────────────┐
+   │ Spot becomes  │
+   │   Available   │
+   └───────────────┘
